@@ -46,8 +46,15 @@ namespace dxShell
         public static void ListToFile(string dirPath, string pattern, string outFile, string format)
         {
             DirectoryInfo dif = new DirectoryInfo(dirPath);
+            if (!dif.Exists)
+            {
+                Console.WriteLine($"文件夹{dif.FullName}不存在！");
+            }
             FileInfo[] files = dif.GetFiles(pattern, SearchOption.TopDirectoryOnly);
-
+            if (files.Length==0)
+            {
+                Console.WriteLine($"文件数为0！╮(╯_╰)╭");
+            }
             FileStream fs = new FileStream(outFile, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs, Encoding.UTF8);
 
