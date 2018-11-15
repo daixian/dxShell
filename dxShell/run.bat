@@ -1,0 +1,1 @@
+dotnet run -- listfile -d "D:\Work\dlog\dlog\x64\Release" -p "*.obj" -f "../dlog/x64/Release/{0}"
