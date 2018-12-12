@@ -1,0 +1,1 @@
+dotnet run -- listfile -d "D:\Work\MRSystemNew\F3DSystem\x64\Release" -p "*.obj" -f "../F3DSystem/x64/Release/{0}"

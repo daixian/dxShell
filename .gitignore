@@ -329,5 +329,7 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
+dxShell/outfile.txt
+
 dxShellJ/build/
 dxShellJ/.gradle/
