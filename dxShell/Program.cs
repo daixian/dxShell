@@ -22,6 +22,11 @@ namespace dxShell
             errs => 1);
         }
 
+        /// <summary>
+        /// 使用设置运行列出文件夹里所有文件
+        /// </summary>
+        /// <param name="opts">参数</param>
+        /// <returns></returns>
         private static object RunFilesInFolderListToFile(FilesInFolderListToFile.Options opts)
         {
             Console.WriteLine("执行FilesInFolderListToFile！");
